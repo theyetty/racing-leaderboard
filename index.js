@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
 const JSON_DIR = path.join(__dirname, 'jsons');
 const POINTS = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
 
@@ -62,6 +61,6 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
 });
